@@ -307,6 +307,13 @@ export class RealtimeClient extends RealtimeEventHandler {
     waitForNextCompletedItem(): Promise<{
         item: ItemType;
     }>;
+    /**
+     * Method for communication  with ros exposed to the console page
+     */
+    async indicateUserSpeaking(): Promise<{}>;
+    async indicateUserStoppedSpeaking(): Promise<{}>;
+    async indicateRobotSpeaking(): Promise<{}>;
+    async indicateRobotStoppedSpeaking(): Promise<{}>;
 }
 /**
  * Valid audio formats
