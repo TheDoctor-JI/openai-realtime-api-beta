@@ -21,6 +21,7 @@
     "websocket": "^1.0.35"
   },
   "dependencies": {
+    "roslib": "^1.4.1",
     "ws": "^8.18.0"
   }
 }
